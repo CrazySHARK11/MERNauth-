@@ -6,11 +6,6 @@
    import jwt from 'jsonwebtoken';
    import nodemailer from "nodemailer"
 
-
-   router.get('/',(req,res)=>{
-      res.send("hello world")
-   })
-
    // ================= Creating an Account ===============
    router.post('/signup', async (req, res) => {
 

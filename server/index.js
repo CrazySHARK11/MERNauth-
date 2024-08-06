@@ -15,6 +15,10 @@ app.use(cors({
     credentials: true
 }))
 
+app.get('/',(req,res)=>{
+    res.send("hello world")
+})
+
 app.use("/auth", UserRouter)
 
 mongoose.connect(process.env.MONGO_DB_CONNECTION).then(()=>{
